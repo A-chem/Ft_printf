@@ -10,20 +10,20 @@
 #                                                                              #
 # **************************************************************************** #
 
-Name = libftprintf.a
+NAME= libftprintf.a
 
-CC = cc
+CC= cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS= -Wall -Wextra -Werror
 
 SRC = ft_putchar.c ft_putstr.c ft_putnbr.c ft_unsigned_putnbr.c ft_puthex.c ft_putadr.c ft_printf.c
 
 OBJ = $(SRC:.c=.o);
 
-all = $(Name)
+all: $(NAME)
 
-$(Name): $(OBJ)
-	@ar rcs $(Name) $(OBJ)
+$(NAME): $(OBJ)
+	@ar rcs $(NAME) $(OBJ)
 	@echo "Library $(NAME) created."
 
 %.o: %.c ft_printf.h
@@ -34,7 +34,7 @@ clean:
 	@rm -f $(OBJ)
 
 fclean: clean
-	@rm -f $(Name)
+	@rm -f $(NAME)
 	@echo "Library $(NAME) removed."
 
 re : fclean all

@@ -6,13 +6,13 @@
 /*   By: achemlal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 11:20:56 by achemlal          #+#    #+#             */
-/*   Updated: 2024/11/21 11:22:49 by achemlal         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:45:12 by achemlal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putadr(unsigned long long nb)
+int	ft_putadr(unsigned long nb)
 {
 	int		res;
 	char	*base;

@@ -6,22 +6,22 @@
 /*   By: achemlal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 11:39:14 by achemlal          #+#    #+#             */
-/*   Updated: 2024/11/21 11:40:28 by achemlal         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:03:58 by achemlal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr(const char *str)
+int	ft_putstr(const char *s)
 {
 	int	i;
 
 	i = 0;
-	if (!str)
+	if (!s)
 		return (write(1, "(null)", 6));
-	while (str[i])
+	while (s[i])
 	{
-		ft_putchar(str[i]);
+		ft_putchar(s[i]);
 		i++;
 	}
 	return (i);
